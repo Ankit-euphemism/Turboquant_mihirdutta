@@ -6,41 +6,46 @@ Turboqaunt
 
 * Project Name
 
-[Your Project Name]
+Happenin
 
 * Selected Track
 
-[Track Name – e.g., AI/ML, Web3, Healthcare, Sustainability, etc.]
+Web Development
 
 * Selected Problem Statement (PS)
 
-[Problem Statement ID / Title]
+[4]
 
 * Team Leader
 
-Name: [Leader Name]
-Phone: [Phone Number]
+Name: Mihir Dutta
+Phone: 9256878898
 
 * Team Members & Roles
 Name	Role
-[Member 1 Name]	[Role – e.g., Frontend Developer]
-[Member 2 Name]	[Role – Backend Developer]
-[Member 3 Name]	[Role – AI/ML Engineer]
+Mihir Dutta	[Backend Developer]
+Ankit Kumar	[Backend Developer]
+Priya Goswami [Frontend Developer]
+Prakhar Mishra [Frontend Developer]
 
  * Project Description
 
-[Write your project description here. Use this structure for best impact:]
+
 
 Problem:
-Briefly explain the real-world problem you are solving.
+Mainstream ticketing platforms focus on stadiums and massive concerts. Small college fests, local pop-up shops, and community events get lost in the noise. Users lack a real-time map of what is actually happening within a 5km radius right now.
 Solution:
-Describe your approach and how your project solves it.
+Ticket-Flow Logic: "We track the 'Live Pulse' by monitoring real-time QR code validations at the venue entrance."
+
+The 'Active Session' Concept: "When a ticket is scanned, the user is marked 'Active'. If they leave and scan out (optional) or after the event duration ends, the density drops."
+
+Scalability: "This requires zero hardware overhead for local cafe owners or student organizers—just their smartphone."
 Key Features:
-Feature 1
-Feature 2
-Feature 3
+Ticket-Flow Logic: "We track the 'Live Pulse' by monitoring real-time QR code validations at the venue entrance."
+The 'Active Session' Concept: "When a ticket is scanned, the user is marked 'Active'. If they leave and scan out (optional) or after the event duration ends, the density drops."
+Scalability: "This requires zero hardware overhead for local cafe owners or student organizers—just their smartphone."
 Tech Stack:
-(e.g., React, Node.js, Python, TensorFlow, MongoDB, etc.)
+(React, supabase,Vercel,leaflet.js,lucid-react, etc.)
 Impact:
 Explain how your project helps users / society.
 
