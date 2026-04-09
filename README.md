@@ -2,7 +2,7 @@
 
 * Team Name
 
-Turboqaunt
+Technoment
 
 * Project Name
 
