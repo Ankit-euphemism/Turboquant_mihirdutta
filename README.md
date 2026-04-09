@@ -51,4 +51,4 @@ Explain how your project helps users / society.
 
 🔗 Additional Links (Optional)
 
-Presentation: [Link]
+Presentation: https://docs.google.com/presentation/d/e/2PACX-1vT_T3vpAbIQ19j_pK2fsm4Wr9GW_JWXqNNRUK-4GVfJYrSh8bcUdqjrwfoHfJlX3w/pub?start=true&loop=true&delayms=3000
