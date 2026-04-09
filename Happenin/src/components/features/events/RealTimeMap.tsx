@@ -1,4 +1,3 @@
-import React from 'react'
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -32,8 +31,8 @@ interface RealTimeMapProps {
 }
 
 export default function RealTimeMap({ events, focusedEventId }: RealTimeMapProps) {
-  // Default center (e.g. Bangalore or standard center)
-  const defaultCenter: [number, number] = [12.9716, 77.5946]
+  // Default center (e.g. lukcknow or standard center)
+  const defaultCenter: [number, number] = [26.839, 80.923] // Example: Center of lucknow
   
   const focusedEvent = events.find(e => e.id === focusedEventId)
   const mapCenter = focusedEvent ? [focusedEvent.lat, focusedEvent.lng] as [number, number] : defaultCenter

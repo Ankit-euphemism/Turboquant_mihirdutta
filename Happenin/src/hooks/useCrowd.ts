@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { getCrowdMetric, subscribeToRealTimeCrowd } from '../services/crowdService';
-import { getUserTickets, getCurrentCrowd } from '../services/ticketService';
+import { getUserTickets } from '../services/ticketService';
 import type { CrowdMetric, Ticket } from '../types';
 
 /**

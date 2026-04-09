@@ -1,4 +1,3 @@
-import { createClient } from '@supabase/supabase-js';
 import { supabase } from '../lib/supabase';
 import type { CrowdMetric } from '../types';
 
@@ -33,7 +32,7 @@ export const subscribeToRealTimeCrowd = (
         table: 'tickets',
         filter: `event_id=eq.${eventId}`,
       },
-      async (payload) => {
+      async () => {
         // Debounce: Only update after 2 seconds of no changes
         if (debounceTimers.has(eventId)) {
           clearTimeout(debounceTimers.get(eventId)!);

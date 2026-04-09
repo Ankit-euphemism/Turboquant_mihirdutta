@@ -38,12 +38,11 @@ function InputField({ icon: Icon, label, value, onChange, type = 'text', placeho
 // ─────────────────────────────────────────────────────────────────────────────
 
 interface Props {
-  userId: string
   onClose: () => void
   onSuccess: () => void
 }
 
-export function AddEventForm({ userId, onClose, onSuccess }: Props) {
+export function AddEventForm({ onClose, onSuccess }: Props) {
   const [step, setStep] = useState(1)
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)

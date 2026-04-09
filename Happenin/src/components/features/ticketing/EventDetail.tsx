@@ -1,7 +1,7 @@
 import React from 'react';
 import CrowdOMeter from './CrowdOMeter';
 import TicketPurchase from './TicketPurchase';
-import type { Event } from '../../types';
+import type { Event } from '../../../types';
 
 interface EventDetailProps {
   event: Event;

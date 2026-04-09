@@ -4,8 +4,9 @@ import {
   openRazorpayPayment,
   verifyPayment,
   formatAmountToPaise,
-} from '../../services/razorpayService';
-import type { Event } from '../../types';
+  type RazorpayPaymentResponse,
+} from '../../../services/razorpayService';
+import type { Event } from '../../../types';
 
 interface TicketPurchaseProps {
   event: Event;
@@ -68,11 +69,11 @@ const TicketPurchase: React.FC<TicketPurchaseProps> = ({
         order,
         userEmail,
         userPhone,
-        async (paymentResponse) => {
+        async (paymentResponse: RazorpayPaymentResponse) => {
           // Step 3: Payment successful - verify on backend
-          await handlePaymentSuccess(paymentResponse, order);
+          await handlePaymentSuccess(paymentResponse);
         },
-        (error) => {
+        (error: string) => {
           setMessage({ type: 'error', text: error });
           setLoading(false);
         }
@@ -85,7 +86,7 @@ const TicketPurchase: React.FC<TicketPurchaseProps> = ({
     }
   };
 
-  const handlePaymentSuccess = async (paymentResponse: any, order: any) => {
+  const handlePaymentSuccess = async (paymentResponse: any) => {
     setVerifying(true);
     try {
       // Verify payment signature on backend

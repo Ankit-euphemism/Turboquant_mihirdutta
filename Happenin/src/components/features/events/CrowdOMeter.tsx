@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface CrowdOMeterProps {
   currentCapacity: number
   maxCapacity: number

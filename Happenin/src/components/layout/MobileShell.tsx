@@ -15,7 +15,7 @@ import { cn } from '../../lib/utils'
 
 const NAV_ITEMS = ['Events', 'Music', 'Comedy', 'Sports', 'Fests', 'Workshops', 'Live Pulse']
 
-export function MobileShell({ children }: { children?: React.ReactNode }) {
+export function MobileShell() {
   const [activeTab, setActiveTab] = useState<'home' | 'pulse' | 'tickets' | 'profile'>('home')
   const [activeNav, setActiveNav] = useState('Events')
   const [showAddEvent, setShowAddEvent] = useState(false)
@@ -259,7 +259,6 @@ export function MobileShell({ children }: { children?: React.ReactNode }) {
       <AnimatePresence>
         {showAddEvent && user && (
           <AddEventForm
-            userId={user.id}
             onClose={() => setShowAddEvent(false)}
             onSuccess={() => {
               setShowAddEvent(false)

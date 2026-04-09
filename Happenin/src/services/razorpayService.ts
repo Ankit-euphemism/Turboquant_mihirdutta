@@ -14,6 +14,12 @@
 
 import { supabase } from '../lib/supabase';
 
+declare global {
+  interface Window {
+    Razorpay: any;
+  }
+}
+
 // ──────────────────────────────────────────────
 // Types
 // ──────────────────────────────────────────────
@@ -106,13 +112,6 @@ export const openRazorpayPayment = async (
   const isLoaded = await loadRazorpayScript();
   if (!isLoaded) {
     throw new Error('Failed to load Razorpay script');
-  }
-
-  // Declare Razorpay type
-  declare global {
-    interface Window {
-      Razorpay: any;
-    }
   }
 
   const options = {

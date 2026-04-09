@@ -2,5 +2,5 @@
 
 export { default as CrowdOMeter } from './CrowdOMeter';
 export { default as TicketPurchase } from './TicketPurchase';
-export { default as MyTickets } from './MyTickets';
+export { MyTickets } from './MyTickets';
 export { default as EventDetail } from './EventDetail';

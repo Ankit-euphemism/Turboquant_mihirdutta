@@ -28,8 +28,10 @@ export function OrganizerScanner({ onClose }: Props) {
 
   // ── Start scanner ─────────────────────────────────────
   useEffect(() => {
-    startScanner()
-    return () => stopScanner()
+    void startScanner()
+    return () => {
+      void stopScanner()
+    }
   }, [])
 
   const startScanner = async () => {

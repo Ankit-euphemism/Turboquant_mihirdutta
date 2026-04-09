@@ -68,7 +68,7 @@ export function AuthModal() {
 
       {error && (
         <div className="mb-4 p-3 bg-red-50 text-red-600 rounded-lg text-sm flex items-start">
-          <AlertCircle className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" />
+          <AlertCircle className="w-4 h-4 mr-2 mt-0.5 shrink-0" />
           <span>{error}</span>
         </div>
       )}

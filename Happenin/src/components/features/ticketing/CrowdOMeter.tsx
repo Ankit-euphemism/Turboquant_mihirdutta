@@ -1,6 +1,6 @@
 import React from 'react';
-import { useCrowd } from '../../hooks/useCrowd';
-import { getCrowdLevel, getCrowdLevelColor } from '../../services/crowdService';
+import { useCrowd } from '../../../hooks/useCrowd';
+import { getCrowdLevel, getCrowdLevelColor } from '../../../services/crowdService';
 
 interface CrowdOMeterProps {
   eventId: string;
